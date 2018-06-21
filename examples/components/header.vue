@@ -2,8 +2,8 @@
 	<header class="header-wrap">
 		<div class="header-wrap-nav">
 			<a href="/" class="header-wrap-nav-logo">
-				<img src="../assets/images/logo.png" class="logo">
-				<span>CFE MOBILE</span>
+				<!-- <img src="../assets/images/logo.png" class="logo"> -->
+				<span>ZeuseUI</span>
 			</a>
 			<div class="header-wrap-nav-search">
 			</div>
@@ -16,7 +16,7 @@
 			</div>
 
 			<ul class="header-wrap-nav-list">
-				<li class="cfe-menu-item" v-for="(value, key) in headData">
+				<li class="cfe-menu-item" v-for="(value, key, index) in headData" :key="index">
           <router-link 
             active-class="active"
             :to="`/${key}`">
@@ -57,7 +57,6 @@
   	float: right;
     font-size: 20px;
     font-family: 'Raleway', 'Hiragino Sans GB', sans-serif;
-    text-transform: uppercase;
   }
 }
 
