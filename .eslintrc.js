@@ -10,7 +10,7 @@ module.exports = {
       },
     },
     rules: {
-      'no-console': 0,
+      "no-console": 0,
       "no-debugger": process.env.NODE_ENV === 'production' ? 2 : 0,
       "comma-dangle": "off",
       "no-shadow": "off",
@@ -27,7 +27,7 @@ module.exports = {
     globals: {
       HFE_FLIGHT: true,
       Analytics: false,
-      __ENV__: false
-    }
-};
+        __ENV__: false
+    },
+  };
   
