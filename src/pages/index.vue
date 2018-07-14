@@ -1,7 +1,7 @@
 <template>
 	<div class="home-main">
 		<div class="home-banner">
-			<img src="../assets/images/phone.png" class="phone">
+			<img src="../assets/images/phone.png" class="phone" />
 		</div>
 		<div class="home-banner-text">
 			<h2>基于 Vue.js 的移动端组件库</h2>

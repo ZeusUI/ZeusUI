@@ -12,7 +12,7 @@ module.exports = {
     main: './examples/main.js'
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['.js', '.vue', '.md', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@data': resolve('/data')

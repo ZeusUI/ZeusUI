@@ -1,6 +1,6 @@
 <template>
     <div class="phone">
-        <iframe class="demo-page" :src="'//elemefe.github.io/mint-ui/#' + (routePath === '/loadmore' ? '/pull-down' : (routePath === '/repositories' || routePath === '/quickstart' ? '' : routePath))"
+        <iframe class="demo-page" src="./h5.html"
             frameborder="0">
         </iframe>
     </div>
@@ -8,12 +8,7 @@
 
 <script>
     export default {
-        name: 'phone',
-        computed: {
-            routePath () {
-                return this.$route.path.replace(/^\/(zh-cn|en)2?/, '');
-            }
-        }
+        name: 'phone'
     };
 
 </script>
