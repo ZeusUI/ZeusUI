@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: EACCES: permission denied, unlink '/Users/wangshiyang/Desktop/美团/ZeusUI的副本/node_modules/.bin/acorn'
+  Error: EACCES: permission denied, unlink '/Users/wangshiyang/Desktop/美团/ZeusUI的副本/node_modules/eslint-friendly-formatter/README.md'
 
 npm manifest: 
   {
@@ -50,12 +50,10 @@ npm manifest:
       "css-loader": "^0.28.2",
       "es6-promise": "^4.0.5",
       "eslint": "^3.19.0",
-      "eslint-config-hfe": "^2.3.0",
-      "eslint-friendly-formatter": "^2.0.7",
+      "eslint-config-hfe": "^2.4.2",
+      "eslint-friendly-formatter": "^3.0.0",
       "eslint-loader": "^1.7.1",
-      "eslint-plugin-html": "^3.0.0",
-      "eslint-plugin-promise": "^3.4.0",
-      "eslint-plugin-standard": "^2.0.1",
+      "eslint-plugin-html": "^3.2.2",
       "eventsource-polyfill": "^0.9.6",
       "express": "^4.14.1",
       "extract-text-webpack-plugin": "^3.0.0",
@@ -2466,9 +2464,11 @@ Lockfile:
       esrecurse "^4.1.0"
       estraverse "^4.1.1"
   
-  eslint-config-standard@^6.2.1:
-    version "6.2.1"
-    resolved "http://registry.npm.taobao.org/eslint-config-standard/download/eslint-config-standard-6.2.1.tgz#d3a68aafc7191639e7ee441e7348739026354292"
+  eslint-config-hfe@^2.3.0:
+    version "2.4.2"
+    resolved "http://r.npm.sankuai.com/eslint-config-hfe/download/eslint-config-hfe-2.4.2.tgz#01f6072bd881d97eb15897418aaeb12be6a89245"
+    dependencies:
+      eslint-plugin-scissors "^0.3.0"
   
   eslint-friendly-formatter@^2.0.7:
     version "2.0.7"
@@ -2499,6 +2499,10 @@ Lockfile:
   eslint-plugin-promise@^3.4.0:
     version "3.8.0"
     resolved "http://registry.npm.taobao.org/eslint-plugin-promise/download/eslint-plugin-promise-3.8.0.tgz#65ebf27a845e3c1e9d6f6a5622ddd3801694b621"
+  
+  eslint-plugin-scissors@^0.3.0:
+    version "0.3.0"
+    resolved "http://r.npm.sankuai.com/eslint-plugin-scissors/download/eslint-plugin-scissors-0.3.0.tgz#4a5e67bd9dbd887a7f48b18b19eb00f1b3b3df69"
   
   eslint-plugin-standard@^2.0.1:
     version "2.3.1"
