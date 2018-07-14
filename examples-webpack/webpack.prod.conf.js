@@ -7,6 +7,7 @@ const baseWebpackConfig = require('./webpack.base.conf');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const SWPrecachePlugin = require('sw-precache-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
 
 var env = process.env.NODE_ENV === 'testing'
@@ -85,34 +86,14 @@ var webpackConfig = merge(baseWebpackConfig, {
       name: 'manifest',
       chunks: ['vendor']
     }),
-    // auto generate service worker
-    new SWPrecachePlugin({
-      cacheId: 'yc-admin',
-      filename: 'service-worker.js',
-      minify: true,
-      mergeStaticsConfig: true,
-      staticFileGlobs: [
-        path.join(__dirname, '../dist/*.*')
-      ],
-      stripPrefixMulti: {
-        [path.join(__dirname, '../dist/')]: '/'
-      },
-      staticFileGlobsIgnorePatterns: [
-        /index\.html$/,
-        /\.map$/,
-        /\.css$/,
-        /\.svg$/,
-        /\.eot$/
-      ],
-      // runtime caching for offline pwa
-      runtimeCaching: [
+    // copy custom static assets
+    new CopyWebpackPlugin([
         {
-          // never cache service worker
-          urlPattern: /service-worker.js/,
-          handler: 'networkOnly'
+            from: path.resolve(__dirname, '../static'),
+            to: config.build.assetsSubDirectory,
+            ignore: ['.*']
         }
-      ]
-    })
+    ])
   ]
 });
 

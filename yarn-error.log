@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: EACCES: permission denied, unlink '/Users/wangshiyang/Desktop/美团/ZeusUI的副本/node_modules/eslint-friendly-formatter/README.md'
+  Error: EACCES: permission denied, mkdir '/Users/wangshiyang/Desktop/美团/ZeusUI的副本/node_modules/orchestrator/node_modules'
 
 npm manifest: 
   {
@@ -34,6 +34,7 @@ npm manifest:
     },
     "devDependencies": {
       "@hfe/generator-hfe-utils": "^3.10.0",
+      "copy-webpack-plugin": "^4.0.1",
       "autoprefixer": "^7.1.2",
       "babel-core": "^6.22.1",
       "babel-eslint": "^7.1.1",
@@ -1639,6 +1640,10 @@ Lockfile:
     dependencies:
       q "^1.1.2"
   
+  coalescy@1.0.0:
+    version "1.0.0"
+    resolved "http://r.npm.sankuai.com/coalescy/download/coalescy-1.0.0.tgz#4b065846b836361ada6c4b4a4abf4bc1cac31bf1"
+  
   code-point-at@^1.0.0:
     version "1.1.0"
     resolved "http://registry.npm.taobao.org/code-point-at/download/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
@@ -2464,17 +2469,18 @@ Lockfile:
       esrecurse "^4.1.0"
       estraverse "^4.1.1"
   
-  eslint-config-hfe@^2.3.0:
+  eslint-config-hfe@^2.4.2:
     version "2.4.2"
     resolved "http://r.npm.sankuai.com/eslint-config-hfe/download/eslint-config-hfe-2.4.2.tgz#01f6072bd881d97eb15897418aaeb12be6a89245"
     dependencies:
       eslint-plugin-scissors "^0.3.0"
   
-  eslint-friendly-formatter@^2.0.7:
-    version "2.0.7"
-    resolved "http://registry.npm.taobao.org/eslint-friendly-formatter/download/eslint-friendly-formatter-2.0.7.tgz#657f95a19af4989636afebb1cc9de6cebbd088ee"
+  eslint-friendly-formatter@^3.0.0:
+    version "3.0.0"
+    resolved "http://r.npm.sankuai.com/eslint-friendly-formatter/download/eslint-friendly-formatter-3.0.0.tgz#278874435a6c46ec1d94fa0b1ff494e30ef04290"
     dependencies:
       chalk "^1.0.0"
+      coalescy "1.0.0"
       extend "^3.0.0"
       minimist "^1.2.0"
       text-table "^0.2.0"
@@ -2489,24 +2495,16 @@ Lockfile:
       object-hash "^1.1.4"
       rimraf "^2.6.1"
   
-  eslint-plugin-html@^3.0.0:
+  eslint-plugin-html@^3.2.2:
     version "3.2.2"
     resolved "http://r.npm.sankuai.com/eslint-plugin-html/download/eslint-plugin-html-3.2.2.tgz#ef7093621d3a93de3206fd1f92f347ea9a1a4dfa"
     dependencies:
       htmlparser2 "^3.8.2"
       semver "^5.4.1"
   
-  eslint-plugin-promise@^3.4.0:
-    version "3.8.0"
-    resolved "http://registry.npm.taobao.org/eslint-plugin-promise/download/eslint-plugin-promise-3.8.0.tgz#65ebf27a845e3c1e9d6f6a5622ddd3801694b621"
-  
   eslint-plugin-scissors@^0.3.0:
     version "0.3.0"
     resolved "http://r.npm.sankuai.com/eslint-plugin-scissors/download/eslint-plugin-scissors-0.3.0.tgz#4a5e67bd9dbd887a7f48b18b19eb00f1b3b3df69"
-  
-  eslint-plugin-standard@^2.0.1:
-    version "2.3.1"
-    resolved "http://registry.npm.taobao.org/eslint-plugin-standard/download/eslint-plugin-standard-2.3.1.tgz#6765bd2a6d9ecdc7bdf1b145ae4bb30e2b7b86f8"
   
   eslint-scope@^3.7.1:
     version "3.7.3"
