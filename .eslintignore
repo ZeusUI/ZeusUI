@@ -1,2 +1,9 @@
 build/*.js
-dist/*.js
+config/*.js
+node_modules/
+webpack/
+examples-webpack/
+gulp/
+dist/
+build/
+test/

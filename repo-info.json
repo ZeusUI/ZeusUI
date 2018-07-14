@@ -1,0 +1,27 @@
+{
+  "name": "timoo",
+  "desc": "timoo",
+  "type": "hfe-generator",
+  "group": "hfe",
+  "version": "0.1.0",
+  "author": {
+    "name": "wangshiyang",
+    "email": "wangshiyang02@meituan.com"
+  },
+  "publishType": "vip",
+  "root": "./src",
+  "port": "8088",
+  "timestamp": 1505358740726,
+  "useCombo": false,
+  "toTest": [
+    "h5:prepub"
+  ],
+  "branchEnvMap": {
+    "test01": [
+      "test01"
+    ],
+    "test02": [
+      "test02"
+    ]
+  }
+}

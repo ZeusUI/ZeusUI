@@ -4,8 +4,12 @@ module.exports = {
   parserOptions: {
     sourceType: 'module'
   },
+  env: {
+    browser: true,
+    mocha: true
+  },
   // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
-  extends: 'standard',
+  extends: 'hfe',
   // required to lint *.vue files
   plugins: [
     'html'
@@ -22,6 +26,7 @@ module.exports = {
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     'semi': ['error', 'always'],
+    "indent": ["error", 4],
     'space-before-function-paren': 0
   }
 }

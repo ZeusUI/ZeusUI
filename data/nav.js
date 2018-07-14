@@ -1,0 +1,12 @@
+const nav = [
+    {
+        name: '安装',
+        path: '/installation'
+    },
+    {
+        name: '快速上手',
+        path: '/quickstart'
+    }
+];
+
+export default nav;
