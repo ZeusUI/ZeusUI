@@ -4,7 +4,10 @@
             {{ title }}
         </header>
 
-        <router-link class="page-back" v-if="visible" :to="'/'">
+        <router-link 
+            class="page-back" 
+            v-if="visible" 
+            :to="'/'">
             <i class="iconfont icon-arrowleft"></i>
         </router-link>
 
