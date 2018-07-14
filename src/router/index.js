@@ -14,7 +14,7 @@ const registerRoute = (config) => {
         children: []
     });
 
-    function addRoute(page) {
+    function addRoute (page) {
         const component = page.path === '/changelog' ? require('@pages/changelog') : require(`../docs${page.path}`);
         let child = {
             path: page.path.slice(1),

@@ -92,7 +92,7 @@
             };
         },
         computed: {
-            visible() {
+            visible () {
                 return ['/'].indexOf(this.$route.path) < 0;
             }
         },

@@ -10,7 +10,7 @@
     export default {
         name: 'phone',
         computed: {
-            routePath() {
+            routePath () {
                 return this.$route.path.replace(/^\/(zh-cn|en)2?/, '');
             }
         }

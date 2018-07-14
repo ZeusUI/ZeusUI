@@ -143,7 +143,7 @@
                 default: ''
             }
         },
-        data() {
+        data () {
             return {
                 highlights: [],
                 navState: [],
@@ -157,21 +157,21 @@
             }
         },
         computed: {
-            navStyle() {
+            navStyle () {
                 return this.isSmallScreen ? {
                     'padding-bottom': '60px'
                 } : {};
             },
-            isComponentPage() {
+            isComponentPage () {
                 return /^component-/.test(this.$route.name);
             }
         },
         methods: {
-            handleResize() {
+            handleResize () {
                 this.isSmallScreen = document.documentElement.clientWidth < 768;
                 this.handlePathChange();
             },
-            handlePathChange() {
+            handlePathChange () {
                 if (!this.isSmallScreen) {
                     this.expandAllMenu();
                     return;
@@ -186,32 +186,32 @@
                     ul.style.height = 'auto';
                 });
             },
-            hideAllMenu() {
+            hideAllMenu () {
                 [].forEach.call(this.$el.querySelectorAll('.pure-menu-list'), ul => {
                     ul.style.height = '0';
                 });
             },
-            expandAllMenu() {
+            expandAllMenu () {
                 [].forEach.call(this.$el.querySelectorAll('.pure-menu-list'), ul => {
                     ul.style.height = 'auto';
                 });
             },
-            expandMenu(event) {
+            expandMenu (event) {
                 if (!this.isSmallScreen) return;
                 let target = event.currentTarget;
                 if (!target.nextElementSibling || target.nextElementSibling.tagName !== 'UL') return;
                 this.hideAllMenu();
                 event.currentTarget.nextElementSibling.style.height = 'auto';
             },
-            handleDropdownToggle(visible) {
+            handleDropdownToggle (visible) {
                 this.dropdownVisible = visible;
             }
         },
-        mounted() {
+        mounted () {
             this.handleResize();
             window.addEventListener('resize', this.handleResize);
         },
-        beforeDestroy() {
+        beforeDestroy () {
             window.removeEventListener('resize', this.handleResize);
         }
     };

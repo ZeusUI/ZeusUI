@@ -83,7 +83,7 @@
             type: {
                 type: String,
                 default: 'default',
-                validator(value) {
+                validator (value) {
                     return [
                         'default',
                         'danger',
@@ -94,7 +94,7 @@
             size: {
                 type: String,
                 default: 'normal',
-                validator(value) {
+                validator (value) {
                     return [
                         'small',
                         'normal',

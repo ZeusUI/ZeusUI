@@ -1,32 +1,33 @@
 module.exports = {
-  root: true,
-  parser: 'babel-eslint',
-  parserOptions: {
-    sourceType: 'module'
-  },
-  env: {
-    browser: true,
-    mocha: true
-  },
-  // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
-  extends: 'hfe',
-  // required to lint *.vue files
-  plugins: [
-    'html'
-  ],
-  // add your custom rules here
-  'rules': {
-    // allow paren-less arrow functions
-    'arrow-parens': 0,
-    'no-catch-shadow': 0,
-    "no-alert": 0,
-    "no-useless-constructor": 0,
-    // allow async-await
-    'generator-star-spacing': 0,
-    // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-    'semi': ['error', 'always'],
-    "indent": ["error", 4],
-    'space-before-function-paren': 0
-  }
-}
+    root: true,
+    extends: 'hfe',
+    plugins: ['html'],
+    parser: "babel-eslint",
+    parserOptions: {
+      sourceType: 'module',
+      ecmaFeatures: {
+        experimentalObjectRestSpread: true,
+      },
+    },
+    rules: {
+      'no-console': 0,
+      "no-debugger": process.env.NODE_ENV === 'production' ? 2 : 0,
+      "comma-dangle": "off",
+      "no-shadow": "off",
+      "no-param-reassign": "off",
+      "no-empty-function": "off",
+      "no-useless-escape": "off",
+      "no-undefined": "off",
+      "consistent-return": "off",
+      "no-implicit-coercion": 0,
+      "new-cap": 0,
+      "no-control-regex": 0,
+      "complexity": ["error", 24]
+    },
+    globals: {
+      HFE_FLIGHT: true,
+      Analytics: false,
+      __ENV__: false
+    }
+};
+  

@@ -38,7 +38,7 @@
     import { navData } from '@data';
 
     export default {
-        data() {
+        data () {
             return {
                 base: '/component',
                 navData: navData

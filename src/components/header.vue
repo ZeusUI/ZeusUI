@@ -136,11 +136,11 @@
 <script>
     import { componentData } from '@data';
     export default {
-        data() {
+        data () {
             return {};
         },
         computed: {
-            headData() {
+            headData () {
                 return componentData.header;
             }
         }
