@@ -9,7 +9,7 @@ function resolve (dir) {
 
 module.exports = {
   entry: {
-    main: './src/main'
+    main: './src/main.js'
   },
   resolve: {
     extensions: ['.js', '.vue', '.md', '.json'],
